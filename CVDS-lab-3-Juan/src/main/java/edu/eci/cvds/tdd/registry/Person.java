@@ -1,4 +1,5 @@
 package edu.eci.cvds.tdd.registry;
+
 /**
  * Person representation Class
  */
@@ -20,10 +21,10 @@ public class Person {
      */
     private Gender gender;
     /**
-
      * Flag to specify if a person is alive
      */
     private boolean alive;
+
     /**
      * The class' default constructor
      */
@@ -33,14 +34,15 @@ public class Person {
         setAge(18);
         setGender(Gender.MALE);
     }
+
     /**
      * A person constructor with all the information
      *
-     * @param name the name
-     * @param id the identification number
-     * @param age the age
+     * @param name   the name
+     * @param id     the identification number
+     * @param age    the age
      * @param gender the gender
-     * @param alive if the person is alive
+     * @param alive  if the person is alive
      */
     public Person(String name, int id, int age, Gender gender, boolean alive) {
         this.name = name;
@@ -49,6 +51,7 @@ public class Person {
         this.gender = gender;
         this.alive = alive;
     }
+
     /**
      * Returns the person's name
      *
@@ -57,12 +60,16 @@ public class Person {
     public String getName() {
         return name;
     }
+
     /**
      * Returns the person's identification number *
-     * @return the identification Number */
+     *
+     * @return the identification Number
+     */
     public int getId() {
         return id;
     }
+
     /**
      * Returns this person's age
      *
@@ -71,6 +78,7 @@ public class Person {
     public int getAge() {
         return age;
     }
+
     /**
      * Returns the gender
      *
@@ -82,11 +90,13 @@ public class Person {
 
     /**
      * Returns if the person is alive *
+     *
      * @return the alive
      */
     public boolean isAlive() {
         return alive;
     }
+
     /**
      * Sets the person's name
      *
@@ -95,12 +105,16 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
+
     /**
      * Sets the person's identification number *
-     * @param id the identification Number to set */
+     *
+     * @param id the identification Number to set
+     */
     public void setId(int id) {
         this.id = id;
     }
+
     /**
      * Sets the person's age
      *
@@ -109,6 +123,7 @@ public class Person {
     public void setAge(int age) {
         this.age = age;
     }
+
     /**
      * Sets the person's gender
      *
@@ -117,6 +132,7 @@ public class Person {
     public void setGender(Gender gender) {
         this.gender = gender;
     }
+
     /**
      * Sets the flag to specify if this person is alive
      *
@@ -125,10 +141,12 @@ public class Person {
     public void setAlive(boolean alive) {
         this.alive = alive;
     }
+
     /**
      * @{inheritdoc}
      */
     @Override
     public String toString() {
-        return "Person [name=" + name + ", id=" + id + ", age=" + age + ", gender=" + gender + ", alive=" + alive + "]"; }
+        return "Person [name=" + name + ", id=" + id + ", age=" + age + ", gender=" + gender + ", alive=" + alive + "]";
+    }
 }
